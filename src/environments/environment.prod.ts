@@ -1,4 +1,4 @@
 export const environment = {
-    production: false,
+    production: true,
     base_url: 'https://boxmakerapi.onrender.com'
 }
