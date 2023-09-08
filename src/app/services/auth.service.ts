@@ -63,9 +63,9 @@ export class AuthService {
   logout() {
     localStorage.clear();
     
-    this.router.navigateByUrl('/auth/login');
+    this.router.navigateByUrl('/login');
     this.router.events.subscribe(event => {
-      if (event instanceof NavigationEnd && this.router.url === '/auth/login') {
+      if (event instanceof NavigationEnd && this.router.url === '/login') {
         window.location.reload();
       }
     });
